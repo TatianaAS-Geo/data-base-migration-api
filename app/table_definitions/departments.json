@@ -1,0 +1,7 @@
+{	"TABLE":"departments",
+	"PRIMARY_KEY": ["id"],
+	"COLUMNS": {
+		"id" : "INTEGER",
+		"department": "STRING"
+    }
+}

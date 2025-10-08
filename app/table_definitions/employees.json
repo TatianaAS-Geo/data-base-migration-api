@@ -1,0 +1,14 @@
+{	"TABLE":"employees",
+	"PRIMARY_KEY": ["id"],
+	"COLUMNS": {
+		"id" : "INTEGER",
+        "name": "STRING",
+		"datetime_str": "STRING",
+		"department_id": "INTEGER",
+		"job_id": "INTEGER"
+    },
+	"FOREIGN_KEYS": {
+		"department_id": "departments",
+		"job_id": "jobs"
+    }
+}

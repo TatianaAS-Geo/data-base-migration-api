@@ -1,0 +1,7 @@
+{	"TABLE":"jobs",
+	"PRIMARY_KEY": ["id"],
+	"COLUMNS": {
+		"id" : "INTEGER",
+		"job": "STRING"
+    }
+}
