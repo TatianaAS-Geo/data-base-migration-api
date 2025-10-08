@@ -59,3 +59,16 @@ class CSVUploadResponse(BaseModel):
     total_rows: int
     processed_rows: int
     errors: Optional[List[str]] = None
+
+class QuarterlyHiringReport(BaseModel):
+    department: str
+    job: str
+    Q1: int
+    Q2: int
+    Q3: int
+    Q4: int
+
+class DepartmentHiringStats(BaseModel):
+    id: int
+    department: str
+    hired: int

@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, status
-from .routers import departments, jobs, employees
+from .routers import departments, jobs, employees, reports
 from .database import create_tables
 
 import logging
@@ -16,6 +16,7 @@ app = FastAPI(
 app.include_router(departments.router)
 app.include_router(jobs.router)
 app.include_router(employees.router)
+app.include_router(reports.router)
 
 # Create tables on startup
 @app.on_event("startup")

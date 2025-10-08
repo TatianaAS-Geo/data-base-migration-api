@@ -3,7 +3,7 @@
 	"COLUMNS": {
 		"id" : "INTEGER",
         "name": "STRING",
-		"datetime_str": "STRING",
+		"datetime_str": "DATETIME",
 		"department_id": "INTEGER",
 		"job_id": "INTEGER"
     },
