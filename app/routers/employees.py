@@ -12,7 +12,7 @@ from ..utils.baseETL import BaseETL
 # Configurar logger
 logger = logging.getLogger(__name__)
 
-router = APIRouter(tags=['departments'])
+router = APIRouter(tags=['employees'])
 
 
 @router.post("/upload/employees", response_model=CSVUploadResponse)

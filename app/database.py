@@ -55,7 +55,7 @@ class Employee(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(50), nullable=True)
-    datetime_str = Column(String(50), nullable=True)
+    datetime_str = Column(DateTime(timezone=True), nullable=True)
     department_id = Column(Integer, ForeignKey("departments.id"), nullable=True)
     job_id = Column(Integer, ForeignKey("jobs.id"), nullable=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
